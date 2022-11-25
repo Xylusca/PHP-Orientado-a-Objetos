@@ -12,7 +12,7 @@ class Veiculo
 {
     public $ano;
     protected $modelo;
-    protected $cor;
+    private $cor;
 
     public function Andar()
     {
@@ -39,10 +39,10 @@ class Carro extends Veiculo
 
 class Moto extends Veiculo
 {
-    //Protected 
-    public function setCor($c)
+    //Private
+    public function setCor($a)
     {
-        $this->cor = $c;
+        $this->cor = $a;
     }
     public function getCor()
     {
@@ -64,7 +64,7 @@ var_dump($carro);
 
 //Private
 // Mas ele criou um novo atributo cor
-$carro->setCors("Vermelho");
-echo $carro->setCors();
+$carro->setCor("Azul");
+echo $carro->setCor();
 echo '<br>';
 var_dump($carro);
