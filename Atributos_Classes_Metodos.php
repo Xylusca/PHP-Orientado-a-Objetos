@@ -1,15 +1,19 @@
 <?php
 //  01 - Classes, Atributos e Métodos
+// Playlist das Videos Aulas.
+// https://www.youtube.com/playlist?list=PLwXQLZ3FdTVEau55kNj_zLgpXL4JZUg8I
 
 // Criando CLASSE Pessoa. 
 // Por boas praticas sempre deixar a primeira letra da class maiúscula. 
-class Pessoa { 
+class Pessoa
+{
     // pessoas tem Características, então esses seriam os atributos dela no caso aqui seria nome idade
     public $nome;
     public $idade;
 
     // As pessoas realizar ações no contexto isso seria o METODOS
-    public function Falar() {
+    public function Falar()
+    {
         // $this pra pegar os atributos de cima se não por $this da erro. 
         echo $this->nome . " de " . $this->idade . " acabou de falar";
     }
