@@ -64,7 +64,7 @@ var_dump($carro);
 echo '<br>';
 
 //Private
-// Mas ele criou um novo atributo cor
+//Ele so deixar alterar no topo se alterar no exetend ele criar um novo atributo ano no caso.
 $carro->setAno(2022);
 echo $carro->getAno();
 echo '<br>';
