@@ -10,9 +10,9 @@ seja visível somente pela classe que a declarou */
 
 class Veiculo
 {
-    public $ano;
+    private $ano;
     protected $modelo;
-    private $cor;
+    public $cor;
 
     public function Andar()
     {
@@ -35,25 +35,25 @@ class Carro extends Veiculo
     {
         return $this->modelo;
     }
+    //Private
+    public function setAno($a)
+    {
+        $this->ano = $a;
+    }
+    public function getAno()
+    {
+        return $this->ano;
+    }
 }
 
 class Moto extends Veiculo
 {
-    //Private
-    public function setCor($a)
-    {
-        $this->cor = $a;
-    }
-    public function getCor()
-    {
-        return $this->cor;
-    }
 }
 
 //Public
 $carro = new Carro();
-$carro->ano = 2022;
-echo $carro->ano;
+$carro->cor = "Azul";
+echo $carro->cor;
 echo "<br>";
 
 //Protectede
@@ -61,10 +61,11 @@ $carro->setModelo("Gol");
 echo $carro->getModelo();
 echo '<br>';
 var_dump($carro);
+echo '<br>';
 
 //Private
 // Mas ele criou um novo atributo cor
-$carro->setCor("Azul");
-echo $carro->setCor();
+$carro->setAno(2022);
+echo $carro->getAno();
 echo '<br>';
 var_dump($carro);
