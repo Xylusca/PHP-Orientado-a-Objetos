@@ -1,5 +1,5 @@
 <?php
-//  02 - Classes, Atributos e Métodos
+//  06 - Classes, Atributos e Métodos
 // Playlist das Videos Aulas.
 // https://www.youtube.com/playlist?list=PLwXQLZ3FdTVEau55kNj_zLgpXL4JZUg8I
 

@@ -1,4 +1,6 @@
 <?php
+//  07 - Classes, Atributos e Métodos
+
 /* Public - fara com que não haja ocutação nenhuma, toda propriedade ou método com public serão
 acessisveis por todos que quiserem acessá-los. */
 
