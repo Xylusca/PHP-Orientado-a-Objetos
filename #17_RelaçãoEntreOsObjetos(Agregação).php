@@ -1,6 +1,8 @@
 <?php 
 // #17 - Relação entre os objetos (Agregação)
 
+/** Na Agregação, uma classe precisa de outra para executar sua ação, ou seja, uma classe utiliza
+ *  a outra como parte de si própria. */
 
 class Produtos{
     public $nome;
