@@ -1,5 +1,0 @@
-{
-    "require": {
-        "cocur/slugify": "v4.2.0"
-    }
-}
